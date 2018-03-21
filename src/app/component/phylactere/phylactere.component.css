@@ -10,7 +10,16 @@
 }
 
 .container{
-    /* height:30px;
-    width : 60px; */
+    /* height:30px;*/
+    width : 983px; 
     background: linear-gradient(to right, #f67800 , #ffad5f);
+    padding: 15px;
+    
+    border-radius: 25px;
+
+    color: white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
