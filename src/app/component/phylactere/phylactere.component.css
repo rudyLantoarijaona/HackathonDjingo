@@ -1,0 +1,16 @@
+.bot_bubble {
+    margin-left: auto;
+    
+    width: 100px;
+}
+
+.human_bubble {
+    margin-right: auto;
+    width: 100px;
+}
+
+.container{
+    /* height:30px;
+    width : 60px; */
+    background: linear-gradient(to right, #f67800 , #ffad5f);
+}
