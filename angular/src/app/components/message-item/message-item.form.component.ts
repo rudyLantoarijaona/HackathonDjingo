@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Message } from '@app/models';
+import  { JeuService } from '@app/services/jeu.service';
  
 @Component({
   selector: 'message-form',
@@ -14,6 +15,14 @@ export class MessageFormComponent implements OnInit {
   @Input('messages')
   private messages : Message[];
  
+  constructor(private jeuService:JeuService) { 
+
+  this.jeuService.getJeu().subscribe(jeu =>{
+      console.log(jeu);
+    });
+
+  }
+
   ngOnInit() {
   }
  
