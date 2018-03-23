@@ -1,0 +1,72 @@
+<div class="blurry_background">
+  {{page}}
+  <div class="panel_container">
+
+    <div [ngSwitch]="page">
+      <div *ngSwitchCase="'menu'">
+
+        <div class="panel_btn " (click)="page = 'Profil_JoueurPrincipal'">
+          <img class="panel_btn-element" src="assets/images/Icon_Profil.png"> <div class="panel_btn-element"><span>Profils des joueurs</span></div>
+        </div>
+        <div class="panel_btn" (click)="page = 'listeJeux'">
+          <img class="panel_btn-element" src="assets/images/Icon_Listejeux.png"> <div class="panel_btn-element"><span>Liste de jeux</span></div>
+        </div>
+
+      </div>
+      <div *ngSwitchCase="'listeJeux'">
+          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'menu'">
+
+          </div>
+          <div style="left: 40px;width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'profilJeux'">
+            
+          </div>
+          <img style="width:100%; height: 100%" src="assets/images/Profil_ListeDeJeux.png">
+      </div>
+      <div *ngSwitchCase="'profilJeux'">
+          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'listeJeux'">
+
+          </div>
+          <img style="width:100%; height: 100%" src="assets/images/Profil_Jeux.png">
+      </div>
+      <div *ngSwitchCase="'Profil_JoueurPrincipal'">
+          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'menu'">
+
+          </div>
+          <div style="right: 0px;bottom:0px;width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'Profil_NewPlayer'">
+
+            </div>
+          <img style="width:100%; height: 100%" src="assets/images/Profil_JoueurPrincipal.png">
+      </div>
+      <div *ngSwitchCase="'Profil_EditionJoueurPrincipal'">
+          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'menu'">
+
+          </div>
+          <img style="width:100%; height: 100%" src="assets/images/Profil_EditionJoueurPrincipal.png">
+      </div>
+      <div *ngSwitchCase="'Profil_NewPlayer'">
+          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'menu'">
+
+          </div>
+          <div style="right: 0px;bottom:0px;width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'Profil_JoueurEnregistrer'">
+
+            </div>
+          <img style="right: 0px;bottom: 0px;width:100%; height: 100%" src="assets/images/Profil_NewPlayer.png">
+      </div>
+      <div *ngSwitchCase="'Profil_JoueurEnregistrer'">
+          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'menu'">
+
+          </div>
+          <img style="width:100%; height: 100%" src="assets/images/Profil_JoueurEnregistrer.png">
+      </div>
+      <div *ngSwitchDefault>
+          <div class="panel_btn " >
+            <img class="panel_btn-element" src="assets/images/Icon_Profil.png"> <div class="panel_btn-element"><span>Profils des joueurs</span></div>
+          </div>
+          <div class="panel_btn" (click)="page = 'listeJeux'">
+            <img class="panel_btn-element" src="assets/images/Icon_Listejeux.png"> <div class="panel_btn-element"><span>Liste de jeux</span></div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</div>

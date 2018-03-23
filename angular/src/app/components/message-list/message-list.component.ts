@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, AfterViewInit, ViewChild, ViewChildren, QueryList, ElementRef } from '@angular/core';
-import { Message } from '@app/models';
-import { MessageItemComponent } from '@app/components/message-item/message-item.component';
+import { Message } from '../../../app/models';
+import { MessageItemComponent } from '../../components/message-item/message-item.component';
+import { getUrlScheme } from '@angular/compiler';
 
 @Component({
   selector: 'message-list',
@@ -14,6 +15,8 @@ export class MessageListComponent implements OnInit, AfterViewInit {
 
   @ViewChild('chatlist', { read: ElementRef }) chatList: ElementRef;
   @ViewChildren(MessageItemComponent, { read: ElementRef }) chatItems: QueryList<MessageItemComponent>;
+
+  public panelOn: boolean = false;
 
   constructor() { }
 

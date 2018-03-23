@@ -21,6 +21,7 @@ export class DialogflowService {
     return this.http
       .post(`${this.baseURL}`, data, {headers: this.getHeaders()})
       .map(res => {
+        console.log(res);
         return res.json()
       })
   }

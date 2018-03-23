@@ -1,0 +1,35 @@
+.header{
+    display : flex;
+    flex-direction : row;
+    text-align: left;
+    background: linear-gradient(to right, #f67800 , #ffad5f);
+
+    height: 60px;
+    width: 100%;
+}
+
+.header-left{
+    flex: 1;
+} 
+
+.logo_container{
+    height: 100%;
+    text-align:left;
+}
+
+.container{
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+    cursor: pointer;
+}
+
+.logo{
+    height: 84%;
+    margin: 5%;
+    // background-color: white;
+}
+
+.burgerMenu{
+    height: 60%;
+}
