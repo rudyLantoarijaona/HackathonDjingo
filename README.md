@@ -11,8 +11,8 @@ NodeJS, AngularCLI, MongoDB, MongoDB Compass(Optionnal)
 1.  $ git clone
 2.  $ npm install
 3.  In 2nd bash, launch MongoDB : ``$ mongod`` 
-4.  In 3rd bash, launch Express : ``$ node server`` 
-5.  You can acces to your project at : ``$ ng serve --open`` 
+4.  In 3rd bash, launch Express : ``$ node server.js`` 
+5.  Go to ``cd angular `` and You can acces to your project at : ``$ ng serve --open`` 
 
 
 ## BDD
