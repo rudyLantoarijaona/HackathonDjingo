@@ -30,5 +30,6 @@ La commande ``ng serve --open`` lance l'application Angular ainsi que l'api Expr
 
 ## Collaborateur
 
+Devlopers : Rudy LANTOARIJAONA & Kunborribo Hing
 [Rudy Lantoarijaona]: <https://github.com/rudyLantoarijaona>
 [Kunborribo Hing]: <https://github.com/thedeadbrother>
