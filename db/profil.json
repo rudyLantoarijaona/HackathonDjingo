@@ -1,4 +1,8 @@
-{"_id":{"$oid":"5ab299f6e5aa472824173417"},"statut":"Parent","age":"45"}
-{"_id":{"$oid":"5ab29a4ee5aa472824173418"},"statut":"Enfant","age":"15"}
-{"_id":{"$oid":"5ab29a50e5aa472824173419"},"statut":"Invité Mineur","age":"15"}
-{"_id":{"$oid":"5ab29a8de5aa47282417341a"},"statut":"Invité Majeur","age":"25"}
+{"_id":{"$oid":"5ab299f6e5aa472824173417"},"pseudo":"Parent","age":"45"}
+{"_id":{"$oid":"5ab29a4ee5aa472824173418"},"pseudo":"Enfant","age":"15"}
+{"_id":{"$oid":"5ab29a50e5aa472824173419"},"pseudo":"Invité Mineur","age":"15"}
+{"_id":{"$oid":"5ab29a8de5aa47282417341a"},"pseudo":"Invité Majeur","age":"25"}
+{"_id":{"$oid":"5ab556f13ffe4d4730d53d1c"},"pseudo":"David","age":"25"}
+{"_id":{"$oid":"5ab557233ffe4d4730d53d1d"},"pseudo":"SolèneR","age":"22"}
+{"_id":{"$oid":"5ab557403ffe4d4730d53d1e"},"pseudo":"Sophiax","age":"28"}
+{"_id":{"$oid":"5ab5575c3ffe4d4730d53d1f"},"pseudo":"AlexG","age":"16"}
