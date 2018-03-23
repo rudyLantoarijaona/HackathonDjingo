@@ -18,7 +18,7 @@ export class MessageFormComponent implements OnInit {
   constructor(private jeuService:JeuService) { 
 
   this.jeuService.getJeu().subscribe(jeu =>{
-      console.log(jeu);
+      
     });
 
   }

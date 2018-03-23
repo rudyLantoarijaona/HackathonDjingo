@@ -3,8 +3,10 @@
   <button class="btn btn-success sendbtn" (click)="sendMessage()">Envoyer</button>
 </div> -->
 
+<form (ngSubmit)="sendMessage()" >
 <div class="chatcontrol">
-  <input type="text" class="form-control chatinput" [(ngModel)]="message.content"/>
-  <button  class="btn btn-success sendbtn" (click)="sendMessage()">Envoyer</button>
+  <input type="text" placeholder="Votre message ici..." class="form-control chatinput" [(ngModel)]="message.content" [ngModelOptions]="{standalone: true}"/>
+  
 </div>
-
+</form>
+<button  class="btn btn-success sendbtn" (click)="sendMessage()" style="display:none;">Envoyer</button>

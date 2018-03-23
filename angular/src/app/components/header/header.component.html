@@ -1,0 +1,12 @@
+<div class="header">
+  <div class="header-left">
+    <div class="logo_container">
+      <img class="logo" src="assets/images/Logo_Djingo.png">
+      
+    </div>
+  </div>
+  <div (click)="switchPanel()" class="container">
+      <img class="burgerMenu" *ngIf="!menuOut" src="assets/images/Icon_Menuburger.png"/>
+      <img class="burgerMenu" *ngIf="menuOut" src="assets/images/Icon_Fermer.png">
+  </div>
+</div>

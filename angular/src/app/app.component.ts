@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Message } from '@app/models';
 import { JeuService } from './services/jeu.service';
+import { ORIGINE } from './models';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,7 @@ export class AppComponent {
   constructor(){
     this.message = new Message('', 'assets/images/user.png');
     this.messages = [
-      new Message('Bienvenue sur Djingo', 'assets/images/bot.png', new Date())
+      new Message('Bienvenue sur Djingo !', 'assets/images/Logo_Djingo.png', new Date(),ORIGINE.bot)
     ];
   }
 }

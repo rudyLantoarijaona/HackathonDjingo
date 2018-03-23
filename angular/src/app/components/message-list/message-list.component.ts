@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, AfterViewInit, ViewChild, ViewChildren, QueryList, ElementRef } from '@angular/core';
 import { Message } from '@app/models';
 import { MessageItemComponent } from '@app/components/message-item/message-item.component';
+import { getUrlScheme } from '@angular/compiler';
 
 @Component({
   selector: 'message-list',

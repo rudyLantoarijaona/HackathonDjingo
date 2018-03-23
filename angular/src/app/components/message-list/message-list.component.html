@@ -1,5 +1,13 @@
-<div class="chatlist" #chatlist>
-  <ul class="list-group">
-    <message-item *ngFor="let msg of messages" [message]="msg"></message-item>
-  </ul>
+<div style="height: 550px;">
+  <app-header [(menuOut)]="panelOn"></app-header>
+  <div class="window">
+    <div class="chatlist" #chatlist>
+      <div style="height:100%;overflow-y: scroll;" [ngClass]="{'blurring': panelOn}">
+        <ul class="list-group">
+          <message-item *ngFor="let msg of messages" [message]="msg" class=""></message-item>
+        </ul>
+      </div>
+      <img src="assets/images/Background.png" alt="" class="adjusted" [ngClass]="{'blurring': panelOn}">
+      <app-panel *ngIf="panelOn" [(menuOut)]="panelOn"></app-panel> 
+  </div>
 </div>

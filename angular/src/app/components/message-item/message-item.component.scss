@@ -1,8 +1,7 @@
 .message {
-  font-size: 1em;
-  font-style: italic;
+  font-size: 1.5em;
   font-weight: 400;
-  
+  border-radius: 50px;
 }
 
 .timeform {
@@ -18,6 +17,45 @@
   }
 }
 
+.avatar{
+  width: 50px;
+  margin-right: 20px;
+}
+
+.list-group-item{
+  width: 80%;
+  border-radius: 30px;
+}
+
+.list-group_bot{
+
+}
+.list-group_human{
+  display:flex;
+  justify-content:flex-end;
+  align-items:right;
+  margin-left: auto;
+}
+
+.human{
+  color: #f67800;
+  background-color: white;
+  display:flex;
+  justify-content:flex-end;
+  align-items:right;
+  margin-left : auto;
+}
+
+.bot{
+  align-items:right;
+  background: linear-gradient(to right, #f67800 , #ffad5f);
+  color: white;
+  align-items:left;
+}
+
+.list-group{
+  
+}
 .avatar{
   width: 50px;
   margin-right: 20px;
