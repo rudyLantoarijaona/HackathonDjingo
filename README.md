@@ -26,3 +26,9 @@ NodeJS, AngularCLI, MongoDB, MongoDB Compass(Optionnal)
 ## Documentation
 
 La commande ``ng serve --open`` lance l'application Angular ainsi que l'api Express qui contient l'API MongoDB. 
+
+
+## Collaborateur
+
+[Rudy Lantoarijaona]: <https://github.com/rudyLantoarijaona>
+[Kunborribo Hing]: <https://github.com/thedeadbrother>
