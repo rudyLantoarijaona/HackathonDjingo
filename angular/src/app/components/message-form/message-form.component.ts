@@ -55,12 +55,12 @@ export class MessageFormComponent implements OnInit {
                 for (var i = 0; i < count; i++) 
                 {
                    this.messages.push(
-                  new Message(jeuParam[i].nom, 'assets/images/Logo_Djingo.png', res.timestamp, ORIGINE.bot)
+                  new Message(jeuParam[i].nom, 'assets/images/Icon_Jeuxdecartes.png', res.timestamp, ORIGINE.bot)
                   );  
                    
                 }   
                 this.messages.push(
-                  new Message("Alors que choisissez-vous ?", 'assets/images/Logo_Djingo.png', res.timestamp, ORIGINE.bot)
+                  new Message("Alors que choisissez-vous ?", 'assets/images/Icon_Jeuxdivers.png', res.timestamp, ORIGINE.bot)
                   );                           
         }      
       }

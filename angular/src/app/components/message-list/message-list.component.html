@@ -2,7 +2,7 @@
   <app-header [(menuOut)]="panelOn"></app-header>
   <div class="window">
     <div class="chatlist" #chatlist>
-      <div style="height:100%;overflow-y: scroll;" [ngClass]="{'blurring': panelOn}">
+      <div style="height:100%;/*overflow-y: scroll;*/" [ngClass]="{'blurring': panelOn}">
         <ul class="list-group">
           <message-item *ngFor="let msg of messages" [message]="msg" class=""></message-item>
         </ul>
