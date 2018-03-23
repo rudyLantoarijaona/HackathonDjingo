@@ -1,9 +1,8 @@
 <div class="blurry_background">
-  {{page}}
   <div class="panel_container">
 
-    <div [ngSwitch]="page">
-      <div *ngSwitchCase="'menu'">
+    <div style="height: 100%;" [ngSwitch]="page">
+      <div style="height: 100%;" *ngSwitchCase="'menu'">
 
         <div class="panel_btn " (click)="page = 'Profil_JoueurPrincipal'">
           <img class="panel_btn-element" src="assets/images/Icon_Profil.png"> <div class="panel_btn-element"><span>Profils des joueurs</span></div>
@@ -13,47 +12,77 @@
         </div>
 
       </div>
-      <div *ngSwitchCase="'listeJeux'">
-          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'menu'">
+      <div style="height: 100%;" *ngSwitchCase="'listeJeux'">
+          <div style="width: 35px;
+          height: 34px;
+          left: 11px;
+          top: 19px;" class="btn_vitrine" (click)="page = 'menu'">
 
           </div>
-          <div style="left: 40px;width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'profilJeux'">
+          <div style="left: 12px;
+          width: 226px;
+          height: 28px;
+          top: 77px;" class="btn_vitrine" (click)="page = 'profilJeux'">
             
           </div>
           <img style="width:100%; height: 100%" src="assets/images/Profil_ListeDeJeux.png">
       </div>
-      <div *ngSwitchCase="'profilJeux'">
-          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'listeJeux'">
+      <div style="height: 100%;" *ngSwitchCase="'profilJeux'">
+          <div style="width: 35px;
+          height: 34px;
+          left: 11px;
+          top: 19px;" class="btn_vitrine" (click)="page = 'listeJeux'">
 
           </div>
           <img style="width:100%; height: 100%" src="assets/images/Profil_Jeux.png">
       </div>
-      <div *ngSwitchCase="'Profil_JoueurPrincipal'">
-          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'menu'">
+      <div style="height: 100%;" *ngSwitchCase="'Profil_JoueurPrincipal'">
+          <div style="width: 33px;
+          height: 34px;
+          left: 14px;
+          top: 7px;" class="btn_vitrine" (click)="page = 'menu'">
 
           </div>
-          <div style="right: 0px;bottom:0px;width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'Profil_NewPlayer'">
+          <div style="right: 8px;
+          bottom: 11px;
+          width: 57px;
+          height: 57px;" class="btn_vitrine" (click)="page = 'Profil_NewPlayer'">
 
-            </div>
+          </div>
+          <div style="left: 82px;top: 21px;width: 86px;height: 116px;" class="btn_vitrine" (click)="page = 'Profil_EditionJoueurPrincipal'">
+
+          </div>
           <img style="width:100%; height: 100%" src="assets/images/Profil_JoueurPrincipal.png">
       </div>
-      <div *ngSwitchCase="'Profil_EditionJoueurPrincipal'">
-          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'menu'">
+      <div style="height: 100%;" *ngSwitchCase="'Profil_EditionJoueurPrincipal'">
+          <div style="width: 33px;
+          height: 34px;
+          left: 14px;
+          top: 7px;" class="btn_vitrine" (click)="page = 'Profil_JoueurPrincipal'">
 
           </div>
           <img style="width:100%; height: 100%" src="assets/images/Profil_EditionJoueurPrincipal.png">
       </div>
-      <div *ngSwitchCase="'Profil_NewPlayer'">
-          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'menu'">
+      <div style="height: 100%;" *ngSwitchCase="'Profil_NewPlayer'">
+          <div style="width: 33px;
+          height: 34px;
+          left: 14px;
+          top: 7px;" class="btn_vitrine" (click)="page = 'menu'">
 
           </div>
-          <div style="right: 0px;bottom:0px;width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'Profil_JoueurEnregistrer'">
+          <div style="right: 10px;
+          bottom: 110px;
+          width: 144px;
+          height: 30px;" class="btn_vitrine" (click)="page = 'Profil_JoueurEnregistrer'">
 
             </div>
           <img style="right: 0px;bottom: 0px;width:100%; height: 100%" src="assets/images/Profil_NewPlayer.png">
       </div>
-      <div *ngSwitchCase="'Profil_JoueurEnregistrer'">
-          <div style="width:20px; height: 20px;" class="btn_vitrine" (click)="page = 'menu'">
+      <div style="height: 100%;" *ngSwitchCase="'Profil_JoueurEnregistrer'">
+          <div style="width: 33px;
+          height: 34px;
+          left: 14px;
+          top: 7px;" class="btn_vitrine" (click)="page = 'Profil_NewPlayer'">
 
           </div>
           <img style="width:100%; height: 100%" src="assets/images/Profil_JoueurEnregistrer.png">
